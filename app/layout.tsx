@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`custom-scrollbar-track custom-scrollbar custom-scrollbar-thumb ${inter.className}`}
+      >
         <div className="relative min-h-screen isolate overflow-hidden border-b border-gray-200 bg-white text-slate-900">
           <svg
             className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -44,17 +46,17 @@ export default function RootLayout({
               fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
             />
           </svg>
-          <div className="mx-auto max-w-7xl px-6 pb-24 pt-28 sm:pb-32 gap-16 lg:px-8 lg:py-24">
+          <div className="mx-auto max-w-7xl px-6 pb-16  pt-20 sm:pt-28 sm:pb-18 gap-16 lg:px-8 lg:py-24">
             <div className="h-full w-full flex flex-col items-center gap-4">
               <div className="flex gap-[8px]">
-                <h1 className="tracking-tight text-2xl xs:text-5xl sm:text-6xl font-bold ">
+                <h1 className="tracking-tight text-4xl xs:text-5xl sm:text-6xl font-bold ">
                   NextSearch
                 </h1>
-                <Icons.Sparkles className="sm:h-16 sm:w-16 xs:h-12 xs:w-12 hidden xs:block" />
+                <Icons.Sparkles className="sm:h-16 sm:w-16 xs:h-12 xs:w-12 hidden md:block" />
               </div>
-              <p className="max-w-xl text-center text-lg text-slate-700">
-                A beautifully designed, hybrid search engine that enhances
-                search accuracy by querying semantically related results.
+              <p className="max-w-md text-center text-lg text-slate-700">
+                A beautifully designed, lightning-fast search built using
+                Next.js.
               </p>
             </div>
             <div className="mx-auto mt-16 w-full max-w-2xl flex flex-col">
