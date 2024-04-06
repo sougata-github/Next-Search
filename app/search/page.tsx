@@ -72,7 +72,7 @@ const Page = async ({ searchParams }: PageProps) => {
         <h3 className="mt-2 text-md font-semibold text-gray-900">
           No results found
         </h3>
-        <p className="mt-1 text-sm mx-auto max-w-prose text-gray-500">
+        <p className="mt-1 px-4 sm:px-0 text-sm mx-auto max-w-prose text-gray-500">
           Sorry, we couldn&apos;t find any matches for{" "}
           <span className="text-green-600 font-medium">{query}</span>!
         </p>
