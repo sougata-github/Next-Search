@@ -6,6 +6,7 @@ import { Icons } from "@/components/icons";
 import SearchBar from "@/components/SearchBar";
 
 import Link from "next/link";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,7 +65,9 @@ export default function RootLayout({
               </p>
             </div>
             <div className="mx-auto mt-16 w-full max-w-2xl flex flex-col">
-              <SearchBar />
+              <Suspense>
+                <SearchBar />
+              </Suspense>
               {children}
             </div>
           </div>
