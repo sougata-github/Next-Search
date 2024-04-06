@@ -5,6 +5,8 @@ import "./globals.css";
 import { Icons } from "@/components/icons";
 import SearchBar from "@/components/SearchBar";
 
+import Link from "next/link";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -49,9 +51,11 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl px-6 pb-16  pt-20 sm:pt-28 sm:pb-18 gap-16 lg:px-8 lg:py-24">
             <div className="h-full w-full flex flex-col items-center gap-4">
               <div className="flex gap-[8px]">
-                <h1 className="tracking-tight text-4xl xs:text-5xl sm:text-6xl font-bold ">
-                  NextSearch
-                </h1>
+                <Link href="/">
+                  <h1 className="tracking-tight text-4xl xs:text-5xl sm:text-6xl font-bold ">
+                    NextSearch
+                  </h1>
+                </Link>
                 <Icons.Sparkles className="sm:h-16 sm:w-16 xs:h-12 xs:w-12 hidden md:block" />
               </div>
               <p className="max-w-md text-center text-lg text-slate-700">
