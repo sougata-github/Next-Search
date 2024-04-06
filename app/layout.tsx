@@ -60,7 +60,7 @@ export default function RootLayout({
                 <Icons.Sparkles className="sm:h-16 sm:w-16 xs:h-12 xs:w-12 hidden md:block" />
               </div>
               <p className="max-w-md text-center text-lg text-slate-700">
-                A Beautifully designed, lightning-fast search engine built using
+                A beautifully designed, lightning-fast search engine built using
                 Next.js.
               </p>
             </div>
